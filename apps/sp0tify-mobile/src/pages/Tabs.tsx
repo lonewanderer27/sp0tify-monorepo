@@ -7,10 +7,9 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { Redirect, Route, RouteComponentProps } from 'react-router-dom';
-import { bookOutline, bookSharp, libraryOutline, searchOutline } from 'ionicons/icons';
+import { libraryOutline, searchOutline } from 'ionicons/icons';
 
 import { FC } from 'react';
-import Library from './Library';
 import LibraryRoute from '../routes/LibraryRoute';
 import Login from './Login';
 import SearchRoute from '../routes/SearchRoute';

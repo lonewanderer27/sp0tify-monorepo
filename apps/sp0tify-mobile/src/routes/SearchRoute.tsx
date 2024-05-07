@@ -9,7 +9,7 @@ const SearchRoute: FC<RouteComponentProps> = ({ match }) => {
   return (
     <IonRouterOutlet id="search">
       <Route path={match.url} component={Search} exact />
-      <Route path={`${match.url}/me`} component={Me} />
+      <Route path={`${match.url}/me`} component={Me} exact />
     </IonRouterOutlet>
   )
 }
