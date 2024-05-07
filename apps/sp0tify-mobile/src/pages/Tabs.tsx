@@ -7,7 +7,7 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { Redirect, Route, RouteComponentProps } from 'react-router-dom';
-import { bookSharp, searchOutline } from 'ionicons/icons';
+import { bookOutline, bookSharp, libraryOutline, searchOutline } from 'ionicons/icons';
 
 import { FC } from 'react';
 import Library from './Library';
@@ -32,7 +32,7 @@ const Tabs: FC<RouteComponentProps> = ({ match }) => {
           <IonLabel>Search</IonLabel>
         </IonTabButton>
         <IonTabButton tab="library" href="/library">
-          <IonIcon icon={bookSharp}>
+          <IonIcon icon={libraryOutline}>
           </IonIcon>
           <IonLabel>Library</IonLabel>
         </IonTabButton>
