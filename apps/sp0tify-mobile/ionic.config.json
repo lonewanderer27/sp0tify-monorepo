@@ -1,0 +1,7 @@
+{
+  "name": "sp0tify-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
