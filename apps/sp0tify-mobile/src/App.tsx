@@ -16,6 +16,7 @@ import '@ionic/react/css/display.css';
 import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
+import './theme/global.css';
 
 import {
   IonApp,
@@ -39,8 +40,6 @@ import Tabs from './pages/Tabs';
  * For more info, please see:
  * https://ionicframework.com/docs/theming/dark-mode
  */
-
-
 
 setupIonicReact({
   mode: "ios"

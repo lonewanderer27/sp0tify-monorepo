@@ -12,7 +12,7 @@ import { bookSharp, searchOutline } from 'ionicons/icons';
 import { FC } from 'react';
 import Library from './Library';
 import Login from './Login';
-import Search from './Search';
+import SearchRoute from '../routes/SearchRoute';
 
 const Tabs: FC<RouteComponentProps> = ({ match }) => {
   console.log(match);
@@ -20,7 +20,7 @@ const Tabs: FC<RouteComponentProps> = ({ match }) => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route path="/search" render={() => <Search />} exact={true} />
+        <Route path="/search" component={SearchRoute} />
         <Route path="/library" render={() => <Library />} exact={true} />
         <Route path="/login" render={() => <Login />} exact={true} />
         <Route path="" render={() => <Redirect to="/search" />} exact={true} />
